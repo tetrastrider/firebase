@@ -1,0 +1,81 @@
+/**RESET**/
+*,*:before,*:after,::after,::before{border:0;margin:0;padding:0;font:inherit;font-size:100%;vertical-align:baseline;outline:0;text-rendering:optimizeLegibility;-webkit-appearance:none;-o-appearance:none;-moz-appearance:none;appearance:none;background:transparent;-webkit-font-smoothing:antialiased;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;text-rendering:optimizeLegibility;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;-o-box-sizing:border-box;-ms-box-sizing:border-box;text-decoration:none;}
+/*SCROLLBAR*/
+html,body{scrollbar-face-color:inherit;scrollbar-arrow-color:inherit;scrollbar-track-color:inherit;scrollbar-shadow-color:inherit;scrollbar-highlight-color:inherit;scrollbar-3dlight-color:inherit;display:block;width:100%;height:auto;scrollbar-darkshadow-color:inherit;scrollbar-width:1vw}
+
+::-webkit-scrollbar{width:1vw}
+::-webkit-scrollbar-track{background:inherit}
+::-webkit-scrollbar-thumb:horizontal{height:1vw}
+::-webkit-scrollbar-corner{background-color:inherit}
+::-webkit-scrollbar-button:start{background:inherit}
+::-webkit-scrollbar-button:end{background:inherit}
+::-webkit-scrollbar-thumb{background:inherit}
+
+select{cursor:pointer;text-overflow:'';text-indent:.5vw;}
+select::-ms-expand{display:none}
+textarea{resize:none;overflow:auto}
+a,a:hover,a:active{text-decoration:none;outline:0;}
+label{text-decoration:none}
+option{color:inherit}
+nav,ol,ul,li{list-style:none;margin:0;padding:0;border:0}
+blockquote,q{quotes:none}
+blockquote:before, blockquote:after, q:before, q:after {content:'';content:none;}
+p:empty{display:none;}
+/**************************LAYOUT**********************************************************************************/
+textarea::-webkit-input-placeholder,input::-webkit-input-placeholder{color:#333;font-weight:600;text-indent:.5vw}
+textarea:-moz-placeholder,input:-moz-placeholder{color:inherit;font-weight:600;text-indent:.5vw}
+textarea:-ms-input-placeholder,input:-ms-input-placeholder{color:inherit;font-weight:600;text-indent:.5vw}
+textarea::-webkit-input-placeholder{color:inherit;text-indent:.5vw}
+textarea:-moz-placeholder{color:inherit;text-indent:.5vw}
+textarea[placeholder],input[placeholder]{color:#000!important;font-weight:600;text-indent:.5vw}
+textarea-ms-input-placeholder{color:inherit;text-indent:.5vw}
+/*************************************************************/
+textarea:focus::-webkit-input-placeholder,input:focus::-webkit-input-placeholder{color:transparent;opacity: 0;}
+textarea:focus:-moz-input-placeholder,input:focus:-moz-placeholder { color:transparent;opacity: 0; }
+textarea:focus::-moz-input-placeholder,input:focus::-moz-placeholder { color:transparent;opacity: 0; }
+input:focus::-moz-placeholder {color:transparent;opacity: 0; }
+textarea:focus::-moz-placeholder {color:transparent;opacity: 0; }
+textarea:focus:-ms-input-placeholder,input:focus:-ms-input-placeholder { color:transparent;opacity: 0; }
+textarea:focus::-ms-input-placeholder,input:focus::-ms-input-placeholder { color:transparent;opacity: 0;} 
+/**MOZ FIX**/
+::-moz-placeholder {opacity: 1;}
+/**MOZ FIX**/
+*{font-family:Arial, Helvetica, sans-serif;font-size:1vw;}
+html[Attributes Style]{-webkit-locale:"es-do"}
+body{background:#f8f8f8;}
+h1{font-size:2.2vw}
+h2{font-size:2vw}
+h3{font-size:1.8vw}
+h4{font-size:1.6vw}
+h5{font-size:1.4vw}
+h6{font-size:1.2vw}
+p{line-height:2vw;text-align:justify;color:#333}
+small{font-size:.85vw}
+
+#container{width:100%;}
+main{width:100%;display:block}
+section{margin:0 auto;width:90%;height:100vh;}
+footer{background-color:#335766;clear:both;color:#fff;text-align:center;width:100%;word-wrap:break-word;}
+header{background-color: #c4d4f1}
+nav{width:58vw;height:1.5vw;float:left;display:-webkit-box}
+nav a{border:0;list-style:none;position:relative;top:9.5vw}
+nav a{color:#000;margin:0;text-decoration:none;float:left;font-weight:700;padding:0 .2vw}
+nav a:hover{color:orange}
+/**celulares**/
+@media(max-width:600px){
+ p,b{font-size:2.5vw!important;line-height:3vw!important}
+  h1{font-size:4vw!important;}
+  h2{font-size:3.8vw!important;}
+  h3{font-size:3.5vw!important;}
+  h4{font-size:3.4vw!important;}
+  h5{font-size:3.2vw!important;}
+  h6{font-size:3vw!important;}
+  header{height:98vw;height: 62vw}
+  nav{width:75%;width: 100%;
+    clear: both;height:6vw;
+    display: block;}
+  nav a{top: 2vw;
+    left: 2vw;font-size:2vw!important;}
+  footer p{font-size: 1.6vw!important;
+    margin-top: .5vw;}
+}
